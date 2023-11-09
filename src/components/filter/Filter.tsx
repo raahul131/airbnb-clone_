@@ -43,7 +43,7 @@ const Filter = () => {
 
   return (
     <div className="absolute top-[90px] md:top-[110px] w-full shadow-md md:shadow-none">
-      <div className=" max-w-[3020px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4">
+      <div className="max-w-[3020px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4">
         <ul className="flex justify-start overflow-auto scroll-hide">
           {filterItems.map((item, i) => (
             <div
@@ -58,7 +58,7 @@ const Filter = () => {
               } `}
             >
               {item.icon}
-              <span className="font-medium text-sm">{item.label}</span>
+              <span className="font-medium text-sm pb-2">{item.label}</span>
             </div>
           ))}
         </ul>

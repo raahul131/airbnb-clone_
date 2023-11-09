@@ -1,13 +1,12 @@
-import Filter from "./components/filter/Filter";
-import BottomNavBar from "./components/navbar/BottomNavBar";
-import NavBar from "./components/navbar/NavBar";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Filter />
-      <BottomNavBar />
+      <Routes>
+        <Route path="/" element={<Layout />} />
+      </Routes>
     </>
   );
 }

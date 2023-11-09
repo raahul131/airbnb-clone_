@@ -1,3 +1,4 @@
+import BottomNavBar from "./BottomNavBar";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
@@ -14,6 +15,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
+      <BottomNavBar />
     </>
   );
 };

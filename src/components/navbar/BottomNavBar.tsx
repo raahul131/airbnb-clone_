@@ -5,7 +5,7 @@ import { LiaUserCircleSolid } from "react-icons/lia";
 const BottomNavBar = () => {
   return (
     <div>
-      <div className="fixed w-full bottom-0 py-3 px-10 items-center justify-evenly flex border-t-[2px] md:hidden text-black/70">
+      <div className="fixed w-full bottom-0 py-3 px-10 items-center justify-evenly flex border-t-[2px] md:hidden text-black/70 bg-white z-10">
         <div className="items-center justify-center flex flex-col hover:text-rose-500">
           <FiSearch size={25} />
           <span>Explore</span>
