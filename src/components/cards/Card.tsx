@@ -3,8 +3,8 @@ import { AiFillStar } from "react-icons/ai";
 
 const Card = ({ image, title, rating, distance, price, date }) => {
   return (
-    <div>
-      <div className="">
+    <div className="cursor-pointer">
+      <div>
         {/* <div className="absolute top-3 left-[330px] md: text-black right-0">
           <span className="right-10">
             <AiOutlineHeart size={30} />

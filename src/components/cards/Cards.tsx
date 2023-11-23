@@ -5,7 +5,7 @@ const Cards = () => {
   return (
     <>
       {" "}
-      <div className="absolute top-[170px] md:top-[190px]">
+      <div className="absolute top-[170px] md:top-[190px] mx-6 md:mx-0">
         <div className="md:px-14">
           <ul className="flex flex-wrap justify-evenly mb-16 md:mb-0">
             {hotels.map((data, index) => (

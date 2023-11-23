@@ -15,10 +15,25 @@ import { MdCabin } from "react-icons/md";
 import { PiSnowflake } from "react-icons/pi";
 import { PiTreeEvergreenBold } from "react-icons/pi";
 import { GiRiver } from "react-icons/gi";
+import { FaLessThan } from "react-icons/fa6";
+import { FaGreaterThan } from "react-icons/fa6";
 import { useState } from "react";
 
 const Filter = () => {
   const [selectedFilter, setSelectedFilter] = useState();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevslide = () => {
+    const newIndex =
+      currentIndex === 0 ? filterItems.length - 1 : filterItems.length + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const newIndex =
+      currentIndex === filterItems.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
 
   const filterItems = [
     { label: "Home", icon: <TbHomeSignal size={30} /> },
@@ -42,9 +57,15 @@ const Filter = () => {
   ];
 
   return (
-    <div className="absolute top-[90px] md:top-[110px] w-full shadow-md md:shadow-none">
-      <div className="max-w-[3020px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4">
-        <ul className="flex justify-start overflow-auto scroll-hide">
+    <div className="absolute top-[80px] w-full shadow-md md:shadow-none bg-white">
+      <div className="max-w-[3020px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4 pt-2">
+        <ul className="flex justify-start overflow-auto mx-5 scroll-hide">
+          <div
+            className="fixed -ml-5 border-[2px] border-black p-1 rounded-full bg-white cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-110"
+            onClick={prevslide}
+          >
+            <FaLessThan size={20} />
+          </div>
           {filterItems.map((item, i) => (
             <div
               onClick={() => {
@@ -61,6 +82,12 @@ const Filter = () => {
               <span className="font-medium text-sm pb-2">{item.label}</span>
             </div>
           ))}
+          <div
+            onClick={nextSlide}
+            className="absolute right-3 border-[2px] border-black p-1 rounded-full bg-white cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-110"
+          >
+            <FaGreaterThan size={20} />
+          </div>
         </ul>
       </div>
     </div>
