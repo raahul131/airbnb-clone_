@@ -17,6 +17,7 @@ import hotel16 from "../assets/hotels/house16.avif";
 
 export const hotels = [
   {
+    id: 1,
     title: "Texas, USA",
     image: hotel1,
     price: "1,541",
@@ -25,6 +26,7 @@ export const hotels = [
     date: "Nov 10-15",
   },
   {
+    id: 2,
     title: "California, USA",
     image: hotel2,
     price: "1,141",
@@ -33,6 +35,7 @@ export const hotels = [
     date: "Nov 15-20",
   },
   {
+    id: 3,
     title: "Amsterdam, Australia",
     image: hotel3,
     price: "1,321",
@@ -41,6 +44,7 @@ export const hotels = [
     date: "Dec 10-15",
   },
   {
+    id: 4,
     title: "Loss Angeles, USA",
     image: hotel4,
     price: "3,541",
@@ -49,6 +53,7 @@ export const hotels = [
     date: "Dec 10-18",
   },
   {
+    id: 5,
     title: "Berlin, Germany",
     image: hotel5,
     price: "1,349",
@@ -57,6 +62,7 @@ export const hotels = [
     date: "Jan 02-06",
   },
   {
+    id: 6,
     title: "Budapest, USA",
     image: hotel6,
     price: "1,684",
@@ -65,6 +71,7 @@ export const hotels = [
     date: "Oct 10-12",
   },
   {
+    id: 7,
     title: "Chicago, USA",
     image: hotel7,
     price: "1,642",
@@ -73,6 +80,7 @@ export const hotels = [
     date: "Feb 13-16",
   },
   {
+    id: 8,
     title: "Capetown, South Africa",
     image: hotel8,
     price: "2,563",
@@ -81,6 +89,7 @@ export const hotels = [
     date: "Dec 12-14",
   },
   {
+    id: 9,
     title: "Cologne, Germany",
     image: hotel9,
     price: "2,241",
@@ -89,6 +98,7 @@ export const hotels = [
     date: "Dec 10-15",
   },
   {
+    id: 10,
     title: "Dublin, Ireland",
     image: hotel10,
     price: "3,441",
@@ -97,6 +107,7 @@ export const hotels = [
     date: "Jan 11-13",
   },
   {
+    id: 11,
     title: "Florence, Italy",
     image: hotel11,
     price: "2,541",
@@ -105,6 +116,7 @@ export const hotels = [
     date: "Dec 09-11",
   },
   {
+    id: 13,
     title: "Hong Kong, China",
     image: hotel12,
     price: "4,541",
@@ -113,6 +125,7 @@ export const hotels = [
     date: "Dec 20-23",
   },
   {
+    id: 14,
     title: "Helsinki, Finland",
     image: hotel13,
     price: "1,199",
@@ -121,6 +134,7 @@ export const hotels = [
     date: "Dec 20-25",
   },
   {
+    id: 15,
     title: "Istanbul, Turkey",
     image: hotel14,
     price: "5,341",
@@ -129,6 +143,7 @@ export const hotels = [
     date: "Dec 10-14",
   },
   {
+    id: 16,
     title: "Paris, France",
     image: hotel15,
     price: "4,522",
@@ -137,6 +152,7 @@ export const hotels = [
     date: "Jan 10-12",
   },
   {
+    id: 17,
     title: "Havana, Cuba",
     image: hotel16,
     price: "1,543",

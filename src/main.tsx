@@ -9,11 +9,13 @@ import {
 } from "react-router-dom";
 import Layout from "./Layout.tsx";
 import Cards from "./components/cards/Cards.tsx";
+import NextPage from "./components/NextPage.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="" element={<Layout />}>
       <Route path="/" element={<Cards />} />
+      <Route path="/details/:id" element={<NextPage />} />
     </Route>
   )
 );

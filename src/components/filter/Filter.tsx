@@ -21,9 +21,9 @@ import { useState } from "react";
 
 const Filter = () => {
   const [selectedFilter, setSelectedFilter] = useState();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(8);
 
-  const prevslide = () => {
+  const prevSlide = () => {
     const newIndex =
       currentIndex === 0 ? filterItems.length - 1 : filterItems.length + 1;
     setCurrentIndex(newIndex);
@@ -60,12 +60,13 @@ const Filter = () => {
     <div className="absolute top-[80px] w-full shadow-md md:shadow-none bg-white">
       <div className="max-w-[3020px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4 pt-2">
         <ul className="flex justify-start overflow-auto mx-5 scroll-hide">
-          <div
+          {/* Prev Slide button */}
+          {/* <div
             className="fixed -ml-5 border-[2px] border-black p-1 rounded-full bg-white cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-110"
-            onClick={prevslide}
+            onClick={prevSlide}
           >
             <FaLessThan size={20} />
-          </div>
+          </div> */}
           {filterItems.map((item, i) => (
             <div
               onClick={() => {
@@ -82,12 +83,13 @@ const Filter = () => {
               <span className="font-medium text-sm pb-2">{item.label}</span>
             </div>
           ))}
-          <div
+          {/* Nest Slide Button*/}
+          {/* <div
             onClick={nextSlide}
             className="absolute right-3 border-[2px] border-black p-1 rounded-full bg-white cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-110"
           >
             <FaGreaterThan size={20} />
-          </div>
+          </div> */}
         </ul>
       </div>
     </div>
