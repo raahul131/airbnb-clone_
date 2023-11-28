@@ -2,9 +2,11 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { FiGlobe } from "react-icons/fi";
 import { useState } from "react";
 import Avatar from "./Avatar";
+import SignModal from "./signModal";
 
 const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const toggelOpen = () => {
     setIsOpen((prev) => !prev);
@@ -35,9 +37,18 @@ const UserMenu = () => {
             <div className="px-4 py-3 hover:bg-neutral-100 transition font-semibold">
               Login
             </div>
-            <div className="px-4 py-3 hover:bg-neutral-100 transition font-semibold">
+            <div
+              className="px-4 py-3 hover:bg-neutral-100 transition font-semibold"
+              onClick={() => setShowModal(true)}
+            >
               SIgnUp
             </div>
+
+            <SignModal
+              show={showModal}
+              closeModal={() => setShowModal(false)}
+            />
+
             <div className="px-4 py-3 hover:bg-neutral-100 transition font-semibold">
               Help center
             </div>
